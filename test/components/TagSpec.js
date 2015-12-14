@@ -2,7 +2,7 @@ import Tag from '../../src/components/tags/tag';
 
 describe('Tag', () => {
   context('props.tag', () => {
-    it('should work', () => {
+    it('should display', () => {
       const $tag = $(<Tag tag='pretty pony' />).render();
 
       $tag.find(Tag).length.should.equal(1);
