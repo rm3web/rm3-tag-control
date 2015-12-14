@@ -1,5 +1,7 @@
 # rm3 Tag Control
 
+[![Build Status](https://travis-ci.org/rm3web/rm3-tag-control.svg?branch=master)](https://travis-ci.org/rm3web/rm3-tag-control)
+
 I can guarantee this isn't yet useful.
 
 It will eventually be a linked data (I'm avoiding using the word RDF : ) ) tagging UI in React.
