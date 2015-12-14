@@ -1,14 +1,15 @@
 import React from 'react';
 import Prism from '../Prism';
 import { Label } from 'react-bootstrap';
+import { Tags } from '../../../../src';
 
-class ConfigExample extends React.Component {
+class TagsExample extends React.Component {
 
   render() {
     return (
       <div>
         <Prism className="language-jsx">
-          { `import { setConfig } from 'rm-3-tag-control';` }
+          { `import {Tags} from 'rm3-tag-control';` }
         </Prism>
 
         <p>&nbsp;</p>
@@ -16,18 +17,34 @@ class ConfigExample extends React.Component {
 
         <div className="panel panel-default">
           <div className="panel-heading">
-            <h3 className="panel-title">Change Droids API endpoint</h3>
+            <h3 className="panel-title">Default mode</h3>
           </div>
 
           <div className="panel-body">
-            <p>Everytime <b>Droids#componentWillMount</b> executes it will make a remote request to <b>{ `{ config.url }` }/droids.json</b>, to fetch the droids' list.</p>
-            <p>You can alter it through the <b>setConfig</b> function.</p>
+            <Tags />
           </div>
 
           <div className="panel-footer">
             <Label bsSize="small">Code:</Label>
             <Prism className="language-jsx">
-              { `setConfig({ url: 'http://starwars.fake.api.com/' });` }
+              { `<Tags />` }
+            </Prism>
+          </div>
+        </div>
+
+        <div className="panel panel-default">
+          <div className="panel-heading">
+            <h3 className="panel-title">Supply tags</h3>
+          </div>
+
+          <div className="panel-body">
+            <Tags tags={ [{tag: 'twilight sparkle'}, {predicate: {id: 'pony', name: 'dublin core ponies tag', metadataClass: 'ponies'}, tag: 'pinky pie'}] } />
+          </div>
+
+          <div className="panel-footer">
+            <Label bsSize="small">Code:</Label>
+            <Prism className="language-jsx">
+              { `<Tags tags={ [{tag: 'twilight sparkle'}, {predicate: {id: 'pony', name: 'dublin core ponies tag', metadataClass: 'ponies'}, tag: 'pinky pie'}] } />` }
             </Prism>
           </div>
         </div>
@@ -37,4 +54,4 @@ class ConfigExample extends React.Component {
 
 }
 
-export default ConfigExample;
+export default TagsExample;
