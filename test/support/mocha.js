@@ -21,6 +21,7 @@ global.$ = $;
 global.React = React;
 global.sinon = sinon;
 global.expect = chai.expect;
+global.should = require('chai').should();
 global.mockery = mockery;
 global.TestUtils = TestUtils;
 global.renderStateless = renderStateless;
