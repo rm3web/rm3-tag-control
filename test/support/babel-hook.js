@@ -3,6 +3,4 @@
 // the babel transpiler is activated prior to any
 // test code, and using the same babel options
 
-require("babel/register")({
-  stage: 1
-});
+require("babel-register");
