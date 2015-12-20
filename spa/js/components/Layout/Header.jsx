@@ -4,7 +4,6 @@ import styles from '../../styles/style.css';
 import CSSModules from 'react-css-modules';
 import { config } from '../../../../src';
 
-@CSSModules(styles)
 class Header extends React.Component {
 
   repositoryLink() {
@@ -59,4 +58,4 @@ class Header extends React.Component {
 
 }
 
-export default Header;
+export default CSSModules(Header, styles);
