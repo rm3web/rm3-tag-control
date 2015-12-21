@@ -2,10 +2,50 @@ import React from 'react';
 import Prism from '../Prism';
 import { Label } from 'react-bootstrap';
 import { Tags } from '../../../../src';
+import { LinkedDataBox } from 'linked-data-box';
 
 class TagsExample extends React.Component {
+  constructor() {
+    super();
+
+    const tags = new LinkedDataBox;
+    tags.addTag('plain', 'twilight sparkle');
+    tags.addTag('pony', 'pinkie pie');
+    this.state = {
+      tags: tags,
+    };
+    this.state.predicateList = [
+      { id: 'plain',
+        name: 'Plain tag (no semantic information)',
+        metadataClass: 'Plain'},
+      {
+        id: 'dc:subject',
+        name: 'Dublin Core: Subject',
+        metadataClass: 'Dublin Core'},
+      {
+        id: 'dc:creator',
+        name: 'Dublin Core: Creator',
+        metadataClass: 'Dublin Core'},
+      {
+        id: 'dc:coverage',
+        name: 'Dublin Core: Coverage',
+        metadataClass: 'Dublin Core'},
+      {
+        id: 'pony',
+        name: 'OMG Ponies',
+        metadataClass: 'Ponies'},
+    ];
+    this.state.predicates = {};
+    this.state.predicateList.forEach( (currentValue) => {
+      this.state.predicates[currentValue.id] = {
+        name: currentValue.name,
+        metadataClass: currentValue.metadataClass,
+      };
+    });
+  }
 
   render() {
+    const self = this;
     return (
       <div>
         <Prism className="language-jsx">
@@ -38,13 +78,13 @@ class TagsExample extends React.Component {
           </div>
 
           <div className="panel-body">
-            <Tags tags={ [{tag: 'twilight sparkle'}, {predicate: {id: 'pony', name: 'dublin core ponies tag', metadataClass: 'ponies'}, tag: 'pinky pie'}] } />
+            <Tags tags={self.state.tags} predicates={self.state.predicates} />
           </div>
 
           <div className="panel-footer">
             <Label bsSize="small">Code:</Label>
             <Prism className="language-jsx">
-              { `<Tags tags={ [{tag: 'twilight sparkle'}, {predicate: {id: 'pony', name: 'dublin core ponies tag', metadataClass: 'ponies'}, tag: 'pinky pie'}] } />` }
+              { `<Tags tags={ tags } />` }
             </Prism>
           </div>
         </div>

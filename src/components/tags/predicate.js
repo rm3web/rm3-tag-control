@@ -7,10 +7,17 @@ class Tag extends React.Component {
   }
 
   render() {
+    const name = this.props.predicate;
+    let description = 'plain text tag';
+    if (this.props.predicates) {
+      if (this.props.predicates.hasOwnProperty(this.props.predicate)) {
+        description = this.props.predicates[this.props.predicate].name;
+      }
+    }
     return (
       <div className= { 'predicatePill' }>
-      <abbr title={this.props.predicate ? this.props.predicate.name : 'plain text tag'} >
-      {this.props.predicate ? this.props.predicate.id : 'plain'}
+      <abbr title={description} >
+      {name}
       </abbr>
       </div>
     );
