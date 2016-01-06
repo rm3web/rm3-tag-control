@@ -50,7 +50,7 @@
     "sinon-chai": "2.8.0",
     "spa": "file:./spa",
     "teaspoon": "5.0.1",
-    "webpack": "1.12.9",
+    "webpack": "1.12.10",
     "webpack-stream": "3.1.0"
   },
   "dependencies": {
