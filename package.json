@@ -22,7 +22,7 @@
     "lint": "./node_modules/.bin/eslint ./src/"
   },
   "devDependencies": {
-    "babel": "6.3.26",
+    "babel": "~6.3.26",
     "babel-core": "^6.3.21",
     "babel-eslint": "5.0.0-beta6",
     "babel-istanbul": "0.5.9",
@@ -55,7 +55,9 @@
   },
   "dependencies": {
     "linked-data-box": "0.0.2",
-    "react": "0.14.3",
-    "react-super-select": "^0.2.2"
+    "react": "~0.14.6",
+    "react-super-select": "~0.2.2",
+    "lodash": "~3.10.1",
+    "classnames": "~2.2.3"
   }
 }
