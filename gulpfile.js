@@ -17,7 +17,7 @@ gulp.task('build-commonjs', ['clean:dist:commonjs'], function buildCommonJS() {
   var babel = require('gulp-babel');
 
   gulp.src([srcDir + '/**/*.js', srcDir + '/**/*.jsx'])
-      .pipe(babel({ stage: 1 }))
+      .pipe(babel())
       .pipe(gulp.dest(distDir + 'commonjs/'));
 
   // In case your code contains css files
@@ -81,12 +81,12 @@ function webpackBasicConfig() {
         {
           test: /\.jsx$/,
           exclude: /node_modules/,
-          loaders: ['babel?stage=1']
+          loaders: ['babel-loader']
         },
         {
           test: /\.js$/,
           exclude: /node_modules/,
-          loaders: ['babel?stage=1']
+          loaders: ['babel-loader']
         }
       ]
     },
