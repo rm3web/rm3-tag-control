@@ -1,6 +1,6 @@
 {
   "name": "rm3-tag-control",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "description": "Rm3 Tag Control",
   "author": "Wirehead <wh-npm@wirewd.com>",
   "repository": {
@@ -9,7 +9,6 @@
   },
   "license": "MIT",
   "main": "dist/commonjs/index.js",
-  "//": "delete the 'spa' devDependencies entry if you don't need a web site to testing or document your react component",
   "scripts": {
     "start": "npm run spa",
     "spa": "./node_modules/.bin/gulp --gulpfile ./spa/gulpfile.js",
