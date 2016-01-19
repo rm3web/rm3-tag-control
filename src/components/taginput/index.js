@@ -6,27 +6,29 @@ class TagInput extends React.Component {
   constructor() {
     super();
     this.state = {
-      predText: '',
       tagText: '',
-      preds: [
-        {
-          id: 'dc:subject',
-          name: 'Dublin Core: Subject',
-          metadataClass: 'Dublin Core'},
-        {
-          id: 'dc:creator',
-          name: 'Dublin Core: Creator',
-          metadataClass: 'Dublin Core'},
-        {
-          id: 'dc:coverage',
-          name: 'Dublin Core: Coverage',
-          metadataClass: 'Dublin Core'},
-      ],
     };
   }
 
-  onChangePredicate(e) {
-    console.log(e);
+  onKeyInput(e) {
+    // Enter KEY
+    if (e.keyCode === 13) {
+      if (this.state.predicate.id === 'plain') {
+        this.props.addTag(
+        {tag: this.state.tagText}
+        );
+      } else {
+        this.props.addTag(
+          {predicate: this.state.predicate,
+           tag: this.state.tagText}
+          );
+      }
+      return false;
+    }
+  }
+
+  onChangePredicate(predicate) {
+    this.setState({ predicate: predicate});
   }
 
   onChangeTag(e) {
@@ -37,11 +39,15 @@ class TagInput extends React.Component {
     const t = (
       <div>
       <ReactSuperSelect placeholder="Select a predicate"
-                  dataSource={this.state.preds} ref="predText"
+                  dataSource={this.props.predicates}
                   value={this.state.predText} groupBy="metadataClass"
-                  onChange={this.onChangePredicate.bind(this)} />
-       <input ref="tagText" type={'text'} value={this.state.tagText}
-          onChange={this.onChangeTag.bind(this)} style= {{width: '50%', lineHeight: '30px'}} />
+                  onChange={this.onChangePredicate.bind(this)}
+                  clearable= {false} />
+       <input type={'text'} value={this.state.tagText}
+          onChange={this.onChangeTag.bind(this)}
+          style= {{width: '50%', lineHeight: '30px'}}
+          onKeyUp = {this.onKeyInput.bind(this)}
+          />
 
       </div>
     );
