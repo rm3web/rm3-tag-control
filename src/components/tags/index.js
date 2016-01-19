@@ -17,7 +17,7 @@ class Tags extends React.Component {
   }
 
   removeTag(predicate, value) {
-    this.state.tags.deleteTag(predicate, value);
+    this.state.tags.deleteTagId(predicate, value);
     this.setState({tags: this.state.tags});
   }
 
@@ -29,8 +29,8 @@ class Tags extends React.Component {
         <span key={idx}>
         <Predicate predicate={ pred }
           predicates={ this.props.predicates } key={idx + 'p' } />
-        <Tag removeTag={ this.removeTag.bind(this, pred, tag) }
-          key={idx + 't'} tag={tag} />
+        <Tag removeTag={ this.removeTag.bind(this, pred, tag['@id']) }
+          key={idx + 't'} tag={tag['@id']} />
         </span>);
       }
     );

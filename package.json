@@ -35,8 +35,8 @@
     "chai": "3.4.1",
     "del": "2.2.0",
     "eslint": "1.10.3",
-    "eslint-plugin-react": "~3.14.0",
     "eslint-loader": "~1.2.0",
+    "eslint-plugin-react": "~3.14.0",
     "estraverse": "4.1.1",
     "gulp": "3.9.0",
     "gulp-babel": "6.1.1",
@@ -50,14 +50,17 @@
     "sinon-chai": "2.8.0",
     "spa": "file:./spa",
     "teaspoon": "5.0.1",
+    "through2": "^2.0.0",
     "webpack": "~1.12.10",
     "webpack-stream": "3.1.0"
   },
+  "peerDependencies": {
+    "react": "~0.14.6"    
+  },
   "dependencies": {
-    "linked-data-box": "0.0.2",
-    "react": "~0.14.6",
-    "react-super-select": "~0.2.2",
+    "linked-data-box": "0.0.4",
     "lodash": "~3.10.1",
+    "react-super-select": "~0.2.3",
     "classnames": "~2.2.3"
   }
 }

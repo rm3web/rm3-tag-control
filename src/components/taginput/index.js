@@ -39,11 +39,11 @@ class TagInput extends React.Component {
     const t = (
       <div>
       <ReactSuperSelect placeholder="Select a predicate"
-                  dataSource={this.props.predicates} ref="predText"
+                  dataSource={this.props.predicates}
                   value={this.state.predText} groupBy="metadataClass"
                   onChange={this.onChangePredicate.bind(this)}
                   clearable= {false} />
-       <input ref="tagText" type={'text'} value={this.state.tagText}
+       <input type={'text'} value={this.state.tagText}
           onChange={this.onChangeTag.bind(this)}
           style= {{width: '50%', lineHeight: '30px'}}
           onKeyUp = {this.onKeyInput.bind(this)}

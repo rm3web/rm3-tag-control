@@ -9,8 +9,8 @@ class TagsExample extends React.Component {
     super();
 
     const tags = new LinkedDataBox;
-    tags.addTag('plain', 'twilight sparkle');
-    tags.addTag('pony', 'pinkie pie');
+    tags.addTag('plain', {'@id': 'twilight sparkle'});
+    tags.addTag('pony', {'@id': 'pinkie pie'});
     this.state = {
       tags: tags,
     };
