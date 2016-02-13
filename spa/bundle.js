@@ -1,6 +1,6 @@
 var React = require('react');
 var ReactDOM = require('react-dom');
-var TagControl = require('../src/');
+var TagControl = require('../lib/');
 var LinkedDataBox = require('linked-data-box').LinkedDataBox;
 
 var tags = new LinkedDataBox();

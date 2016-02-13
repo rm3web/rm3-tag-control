@@ -1,4 +1,4 @@
-import Tag from '../../src/components/tags/tag';
+import Tag from '../../lib/components/tags/tag';
 import { findDOMNode } from 'react-dom';
 
 describe('Tag', () => {

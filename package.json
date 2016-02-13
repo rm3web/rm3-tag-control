@@ -8,16 +8,13 @@
     "url": ""
   },
   "license": "MIT",
-  "main": "dist/commonjs/index.js",
+  "main": "dist/index.js",
   "scripts": {
     "spa": "./node_modules/.bin/budo spa/bundle.js:bundle.js --dir spa/ --port 9000 -- -t babelify -p livereactload --port 8000",
-    "build-docs": "./node_modules/.bin/gulp build-docs --gulpfile ./spa/gulpfile.js",
-    "build": "./node_modules/.bin/gulp build",
-    "build-commonjs": "./node_modules/.bin/gulp build-commonjs",
-    "build-standalone": "./node_modules/.bin/gulp build-standalone",
+    "prepublish": "./node_modules/.bin/babel lib -d dist/",
     "quick-test": "./node_modules/.bin/mocha ./test/**/*Spec.js",
     "test": "node ./node_modules/.bin/babel-istanbul cover ./node_modules/.bin/_mocha ./test/**/*Spec.js",
-    "lint": "./node_modules/.bin/eslint ./src/"
+    "lint": "./node_modules/.bin/eslint ./lib/"
   },
   "browserify": {
     "transform": [
@@ -28,6 +25,7 @@
   },
   "devDependencies": {
     "babel": "~6.5.2",
+    "babel-cli": "^6.5.1",
     "babel-core": "^6.4.0",
     "babel-eslint": "5.0.0-beta6",
     "babel-istanbul": "~0.6.0",
@@ -40,6 +38,7 @@
     "babelify": "^7.2.0",
     "budo": "^8.0.4",
     "chai": "3.4.1",
+    "classnames": "~2.2.3",
     "del": "2.2.0",
     "eslint": "1.10.3",
     "eslint-loader": "~1.2.0",
@@ -51,18 +50,21 @@
     "gulp-uglifycss": "1.0.5",
     "jsdom": "~7.2.2",
     "livereactload": "^2.1.1",
+    "lodash": "~3.10.1",
     "mocha": "2.4.5",
     "mockery": "1.4.0",
-    "react-addons-test-utils": "~0.14.6",
+    "react": "~0.14.7",
+    "react-addons-test-utils": "~0.14.7",
+    "react-dom": "~0.14.7",
     "react-proxy": "^2.0.1",
+    "react-super-select": "~0.2.3",
     "sinon": "1.17.2",
     "sinon-chai": "2.8.0",
     "teaspoon": "6.1.2",
-
     "through2": "^2.0.0"
   },
   "peerDependencies": {
-    "react": "~0.14.6",
+    "react": "~0.14.7",
     "react-super-select": "~0.2.3",
     "lodash": "~3.10.1",
     "classnames": "~2.2.3"
