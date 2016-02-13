@@ -23,6 +23,10 @@ class Tags extends React.Component {
 
   render() {
     const arr = [];
+    let readOnlyPredicates = {};
+    if (this.props.readOnlyPredicates) {
+      readOnlyPredicates = this.props.readOnlyPredicates;
+    }
     this.state.tags.iterateTags(
       (pred, tag, idx) => {
         arr.push(
@@ -30,7 +34,7 @@ class Tags extends React.Component {
         <Predicate predicate={ pred }
           predicates={ this.props.predicates } key={idx + 'p' } />
         <Tag removeTag={ this.removeTag.bind(this, pred, tag['@id']) }
-          key={idx + 't'} tag={tag['@id']} />
+          key={idx + 't'} tag={tag['@id']} predicate={ pred } readOnlyPredicates={readOnlyPredicates} />
         </span>);
       }
     );

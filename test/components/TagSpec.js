@@ -4,7 +4,7 @@ import { findDOMNode } from 'react-dom';
 describe('Tag', () => {
   context('props.tag', () => {
     it('should display', () => {
-      const $tag = $(<Tag tag='pretty pony' />).render();
+      const $tag = $(<Tag tag='pretty pony' readOnlyPredicates={{}} />).render();
 
       $tag.find(Tag).length.should.equal(1);
 
@@ -17,7 +17,7 @@ describe('Tag', () => {
       }
 
       let detachedComp = TestUtils.renderIntoDocument(
-        <Tag tag='pretty pony' removeTag={removeTagTest} />
+        <Tag tag='pretty pony' readOnlyPredicates={{}} removeTag={removeTagTest} />
       )
       let button = TestUtils.findRenderedDOMComponentWithTag(detachedComp, 'button')
       let buttonNode = findDOMNode(button);
