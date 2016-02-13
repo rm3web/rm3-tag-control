@@ -11,6 +11,7 @@ class TagsExample extends React.Component {
     const tags = new LinkedDataBox;
     tags.addTag('plain', {'@id': 'twilight sparkle'});
     tags.addTag('pony', {'@id': 'pinkie pie'});
+    tags.addTag('navigation', {'@id': 'navbar'});
     this.state = {
       tags: tags,
     };
@@ -78,7 +79,7 @@ class TagsExample extends React.Component {
           </div>
 
           <div className="panel-body">
-            <Tags tags={self.state.tags} predicates={self.state.predicates} />
+            <Tags tags={self.state.tags} predicates={self.state.predicates} readOnlyPredicates={{'navigation': true}} />
           </div>
 
           <div className="panel-footer">
