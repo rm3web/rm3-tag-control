@@ -54,12 +54,12 @@
     "webpack-stream": "3.1.0"
   },
   "peerDependencies": {
-    "react": "~0.14.6"
+    "react": "~0.14.6",
+    "react-super-select": "~0.2.3",
+    "lodash": "~3.10.1",
+    "classnames": "~2.2.3"
   },
   "dependencies": {
     "linked-data-box": "0.0.4",
-    "lodash": "~3.10.1",
-    "react-super-select": "~0.2.3",
-    "classnames": "~2.2.3"
   }
 }
