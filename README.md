@@ -8,8 +8,8 @@ It will eventually be a linked data (I'm avoiding using the word RDF : ) ) taggi
 
 ## Targets
 
-* `npm run build` - will use babel to transpile jsx and es6 code to plain es5 javascript to the `dist` folder
-* `npm start` - starts a web server at `http://localhost:9000` with a single page app that will require your already transpiled react module.
+* `npm run prepubish` - will use babel to transpile jsx and es6 code to plain es5 javascript to the `dist` folder
+* `npm run spa` - starts a web server at `http://localhost:9000` with a single page app that will require your already transpiled react module.
 * `npm test`  - will use mocha to run all `rm3-tag-control/test` files
 
 ## Thanks
