@@ -1,13 +1,21 @@
 language: node_js
 node_js:
-  - "4"
-  - "5"
+- '4'
+- '5'
 env:
-  - CXX=g++-4.8
+- CXX=g++-4.8
 addons:
   apt:
     sources:
-      - ubuntu-toolchain-r-test
+    - ubuntu-toolchain-r-test
     packages:
-      - g++-4.8
-script: "npm test"
+    - g++-4.8
+script: npm test
+deploy:
+  provider: npm
+  email: wh-npm@wirewd.com
+  api_key:
+    secure: UpYmOGNL9u9Zy7nXGgddZkqSe0dOPrOdHMKTn+FYl7OKY0njNzYzqnZXj0OEhnl/5yT/JVFVoVM/bytnaJSFgfUkyoBHRo0V81KMCVCLC0wXgvHQapIWclEOlvcVQZIIRA7wW1oofQU7OkMStv+vn4rXzx4kjnBQBOZvZvn0/wbg28EDWxurMV3csgYETa6Rwffopy5azHOtJUti80WMhrNq4kc4jKFZZsf6/7ULCLvJyFNGYHzi1ZHr3iQuSqasIR87ZU8tLjyeinjJZ8egTg8FMynIAli2++CuSIcCxWL7nu+a2v9OU7KNCdhstksrq1k0JFAmJvWJYpDCuN0p12hT+3A7TUwjew88HDQCzkdegvg+5+N/+qVnzySzcOG/ZaK1hYOWcqUXTcGbV5y+wmmg4Poc5KeCBzLnWwxICC3dJlRRKRMkHso3F90mQBRvcK9FgOfCeA4X5QEd460j/3xGoCSNIUTkXTuanxwNkBAVlOkgZltFoTxMKwo/doXi5iLwP46GhKwUHmEM8E0xQ91O66490wMLJ/E7lN3wmReMIi33yDhzc253av48XBkFYn+afutzw5qGAQnho0qHH+Y/e4dZ9jiPD2WOd9WzhMUdFDIo1j9MBK8MQCyMMteB3hssuh3O6sPKzkxh7IcvFtpCUCE9O/5c/wAG4ElI11I=
+  on:
+    tags: true
+    repo: rm3web/rm3-tag-control
