@@ -19,3 +19,4 @@ deploy:
   on:
     tags: true
     repo: rm3web/rm3-tag-control
+    node: '4'
