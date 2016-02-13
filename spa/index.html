@@ -1,10 +1,10 @@
-@import 'vendor/bootstrap';
-@import 'vendor/bootstrap-theme';
-@import 'vendor/prism';
-@import 'style';
-@import 'ascii_tree';
-@import '../../node_modules/react-super-select/lib/react-super-select.css';
+<html>
+  <head>
+    <meta charset="UTF-8" />
+<link rel="stylesheet" href="http://yui.yahooapis.com/pure/0.6.0/pure-min.css" />
+<link rel="stylesheet" href="react-super-select.css" />
 
+<style>
 .r-ss-wrap {
   width: 50%;
   display: inline-block;
@@ -17,3 +17,13 @@
 .deleteTag { border: 0; color: #ff604c; padding: 0px 0px 0px 4px; text-decoration: none; outline: none; cursor: pointer; background-color: transparent; font-weight: bold; }
 .deleteTag:hover { color: red; }
 .deleteTag:before { content: '✖'; }
+</style>
+    <title>Controls</title>
+  </head>
+  <body>
+    <h1>Control samples</h1>
+    <div id="tagcontrol">
+    </div>
+    <script src="bundle.js"></script>
+  </body>
+</html>
