@@ -8,7 +8,14 @@ describe('Tag', () => {
 
       $tag.find('div').length.should.equal(1);
       $tag.single('div').find('button').length.should.equal(1);
-      $tag.single('div').find('button').length.should.equal(1);
+      $tag.single('div').first().text().should.equal('pretty pony');
+    });
+
+    it('should display read-only', () => {
+      const $tag = $(<Tag tag='pretty pony' predicate='navbar' readOnlyPredicates={{'navbar': true}} />).render();
+
+      $tag.find('div').length.should.equal(1);
+      $tag.single('div').find('button').length.should.equal(0);
       $tag.single('div').first().text().should.equal('pretty pony');
     });
 
