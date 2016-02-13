@@ -5,8 +5,12 @@
   "author": "Wirehead <wh-npm@wirewd.com>",
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "git@github.com:rm3web/rm3-tag-control.git"
   },
+  "bugs": {
+    "url": "https://github.com/rm3web/rm3-tag-control/issues"
+  },
+  "homepage": "https://github.com/rm3web/rm3-tag-control",
   "license": "MIT",
   "main": "dist/index.js",
   "scripts": {
