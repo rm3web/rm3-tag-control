@@ -75,7 +75,6 @@ class TagInputExample extends React.Component {
   }
 
   addTag(tag) {
-    console.log(tag);
     let pred = 'plain';
     if (tag.hasOwnProperty('predicate')) {
       pred = tag.predicate.id;
