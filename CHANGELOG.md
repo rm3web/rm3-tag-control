@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 0.0.3 - 2016-2-13
+- Updated some of the dependencies.
+- Added .babelrc to .npmignore so it installs properly.
+
 ## 0.0.2 - 2016-2-13
 - Removed old Single-Page test app, replaced with new one
 - Moved more things to peer dependencies, to avoid dreaded too-many-reacts problem.
