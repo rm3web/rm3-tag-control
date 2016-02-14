@@ -1,12 +1,24 @@
 {
   "name": "rm3-tag-control",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Rm3 Tag Control",
   "author": "Wirehead <wh-npm@wirewd.com>",
   "repository": {
     "type": "git",
     "url": "git@github.com:rm3web/rm3-tag-control.git"
   },
+  "keywords": [
+    "react",
+    "tag",
+    "tags",
+    "react-component",
+    "rdf",
+    "jsonld",
+    "hypermedia",
+    "linked-data",
+    "json-ld",
+    "semantic"
+  ],
   "bugs": {
     "url": "https://github.com/rm3web/rm3-tag-control/issues"
   },

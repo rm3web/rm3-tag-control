@@ -4,6 +4,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## Unreleased
 
+## 0.0.4 - 2016-2-13
+- Added defaultPredicate property
+
 ## 0.0.3 - 2016-2-13
 - Updated some of the dependencies.
 - Added .babelrc to .npmignore so it installs properly.
