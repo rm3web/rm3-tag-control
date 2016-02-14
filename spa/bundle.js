@@ -89,7 +89,8 @@ class TagInputExample extends React.Component {
         <TagControl.Tags predicates={this.state.predicates}
           tags={this.state.tags} />
         <TagControl.TagInput predicates={this.state.predicateList} 
-          ready={true} addTag={this.addTag.bind(this)} 
+          ready={true} addTag={this.addTag.bind(this)}
+          defaultPredicate={this.state.predicateList[0]}
           addMessage="Add" placeholder="Select a predicate" />
       </div>
     );
