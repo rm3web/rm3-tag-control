@@ -40,7 +40,7 @@
     "babel-register": "^6.3.13",
     "babelify": "^7.2.0",
     "budo": "^8.0.4",
-    "chai": "3.4.1",
+    "chai": "3.5.0",
     "classnames": "~2.2.3",
     "del": "2.2.0",
     "eslint": "1.10.3",
