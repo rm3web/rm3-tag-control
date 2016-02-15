@@ -80,6 +80,6 @@
     "classnames": "~2.2.3"
   },
   "dependencies": {
-    "linked-data-box": "0.0.4"
+    "linked-data-box": "0.0.5"
   }
 }
