@@ -68,7 +68,7 @@
     "react-super-select": "~0.4.1",
     "sinon": "1.17.2",
     "sinon-chai": "2.8.0",
-    "teaspoon": "6.1.2",
+    "teaspoon": "6.2.0",
     "through2": "^2.0.0"
   },
   "peerDependencies": {
