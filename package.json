@@ -56,7 +56,7 @@
     "classnames": "~2.2.3",
     "del": "2.2.0",
     "eslint": "2.6.0",
-    "eslint-plugin-react": "~3.14.0",
+    "eslint-plugin-react": "~4.2.3",
     "jsdom": "~8.0.0",
     "livereactload": "^2.1.1",
     "lodash": "~4.6.1",
