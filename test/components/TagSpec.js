@@ -1,14 +1,22 @@
-import Tag from '../../src/components/tags/tag';
+import Tag from '../../lib/components/tags/tag';
 import { findDOMNode } from 'react-dom';
 
 describe('Tag', () => {
   context('props.tag', () => {
     it('should display', () => {
-      const $tag = $(<Tag tag='pretty pony' />).render();
+      const $tag = $(<Tag tag='pretty pony' readOnlyPredicates={{}} />).render();
 
-      $tag.find(Tag).length.should.equal(1);
+      $tag.find('div').length.should.equal(1);
+      $tag.single('div').find('button').length.should.equal(1);
+      $tag.single('div').first().text().should.equal('pretty pony');
+    });
 
-      $tag.find(Tag)[0].props.tag.should.equal('pretty pony')
+    it('should display read-only', () => {
+      const $tag = $(<Tag tag='pretty pony' predicate='navbar' readOnlyPredicates={{'navbar': true}} />).render();
+
+      $tag.find('div').length.should.equal(1);
+      $tag.single('div').find('button').length.should.equal(0);
+      $tag.single('div').first().text().should.equal('pretty pony');
     });
 
     it('should allow for deletion', (cb) => {
@@ -17,7 +25,7 @@ describe('Tag', () => {
       }
 
       let detachedComp = TestUtils.renderIntoDocument(
-        <Tag tag='pretty pony' removeTag={removeTagTest} />
+        <Tag tag='pretty pony' readOnlyPredicates={{}} removeTag={removeTagTest} />
       )
       let button = TestUtils.findRenderedDOMComponentWithTag(detachedComp, 'button')
       let buttonNode = findDOMNode(button);

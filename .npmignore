@@ -1,7 +1,9 @@
 .DS_Store
-gulpfile.js
+.babelrc
+.travis.yml
+/coverage
 /node_modules
 /tmp
 /spa
-/src
+/lib
 /test
