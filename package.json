@@ -58,7 +58,6 @@
     "eslint": "1.10.3",
     "eslint-loader": "~1.2.0",
     "eslint-plugin-react": "~3.14.0",
-    "estraverse": "4.2.0",
     "jsdom": "~8.0.0",
     "livereactload": "^2.1.1",
     "lodash": "~3.10.1",
