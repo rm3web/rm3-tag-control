@@ -57,7 +57,7 @@
     "del": "2.2.0",
     "eslint": "2.10.2",
     "eslint-plugin-react": "~5.1.1",
-    "jsdom": "~9.1.0",
+    "jsdom": "~9.2.0",
     "livereactload": "^2.1.1",
     "lodash": "~4.12.0",
     "mocha": "2.5.1",
