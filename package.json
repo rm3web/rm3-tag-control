@@ -55,7 +55,7 @@
     "chai": "3.5.0",
     "classnames": "~2.2.3",
     "del": "2.2.0",
-    "eslint": "2.10.2",
+    "eslint": "2.11.0",
     "eslint-plugin-react": "~5.1.1",
     "jsdom": "~9.2.0",
     "livereactload": "^2.1.1",
