@@ -54,7 +54,7 @@
     "budo": "^9.0.0",
     "chai": "3.5.0",
     "classnames": "~2.2.3",
-    "eslint": "3.8.0",
+    "eslint": "3.9.1",
     "eslint-plugin-react": "~6.6.0",
     "jsdom": "~9.8.0",
     "livereactload": "^3.0.0",
