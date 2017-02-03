@@ -65,7 +65,7 @@
     "react-dom": "~0.14.7",
     "react-proxy": "^2.0.1",
     "react-super-select": "~0.5.4",
-    "teaspoon": "6.4.2",
+    "teaspoon": "6.4.3",
     "through2": "^2.0.0"
   },
   "peerDependencies": {
