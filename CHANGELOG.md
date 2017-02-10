@@ -4,6 +4,13 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.0.7] - 2017-2-10
+### Added
+- Tag types.
+
+### Changed
+- Updated some of the dependencies.
+
 ## [0.0.6] - 2016-6-26
 ### Changed
 - Updated some of the dependencies.
@@ -33,7 +40,8 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - New project
 
-[Unreleased]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.6...HEAD
+[Unreleased]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.7...HEAD
+[0.0.6]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.6...v0.0.7
 [0.0.6]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.5...v0.0.6
 [0.0.5]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.4...v0.0.5
 [0.0.4]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.3...v0.0.4
