@@ -30,6 +30,15 @@ var predicateList = [
     metadataClass: 'Ponies'},
 ];
 
+var linkList = [
+  {
+    id: 'wh.meta.blah',
+    name: 'Blah Link'},
+  {
+    id: 'wh.meta.ponies',
+    name: 'Ponies'}
+];
+
 var predicates = {};
 predicateList.forEach( (currentValue) => {
   predicates[currentValue.id] = {
@@ -79,7 +88,11 @@ class TagInputExample extends React.Component {
     if (tag.hasOwnProperty('predicate')) {
       pred = tag.predicate.id;
     }
-    this.state.tags.addTag(pred, {"@id": tag.tag, "objClass": "tag"});
+    if (tag.type === 'text') {
+      this.state.tags.addTag(pred, {"@id": tag.tag, "objClass": "tag"});
+    } else {
+      this.state.tags.addTag(pred, {"@id": tag.tag, "objClass": "link"});
+    }
     this.setState({tags: this.state.tags});
   }
 
@@ -89,7 +102,7 @@ class TagInputExample extends React.Component {
         <TagControl.Tags predicates={this.state.predicates}
           tags={this.state.tags} />
         <TagControl.TagInput predicates={this.state.predicateList} 
-          ready={true} addTag={this.addTag.bind(this)}
+          ready={true} addTag={this.addTag.bind(this)} links={linkList}
           defaultPredicate={this.state.predicateList[0]}
           addMessage="Add" placeholder="Select a predicate" />
       </div>
