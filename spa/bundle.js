@@ -93,13 +93,16 @@ class TagInputExample extends React.Component {
   }
 
   render() {
+    const languages = [
+      'C', 'Cat', 'Cros', 'Elm'
+    ];
     return (
       <div>
         <TagControl.Tags predicates={this.state.predicates}
           tags={this.state.tags} />
         <TagControl.TagInput predicates={this.state.predicateList} 
           ready={true} addTag={this.addTag.bind(this)} links={linkList}
-          defaultPredicate={this.state.predicateList[0]}
+          defaultPredicate={this.state.predicateList[0]} popularTags={languages}
           addMessage="Add" placeholder="Select a predicate" />
       </div>
     );
