@@ -88,11 +88,7 @@ class TagInputExample extends React.Component {
     if (tag.hasOwnProperty('predicate')) {
       pred = tag.predicate.id;
     }
-    if (tag.type === 'text') {
-      this.state.tags.addTag(pred, {"@id": tag.tag, "objClass": "tag"});
-    } else {
-      this.state.tags.addTag(pred, {"@id": tag.tag, "objClass": "link"});
-    }
+    this.state.tags.addTag(pred, {"@id": tag.tag, "objClass": tag.type});
     this.setState({tags: this.state.tags});
   }
 
