@@ -1,6 +1,6 @@
 {
   "name": "rm3-tag-control",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Rm3 Tag Control",
   "author": "Wirehead <wh-npm@wirewd.com>",
   "repository": {
@@ -76,6 +76,7 @@
   },
   "dependencies": {
     "linked-data-box": "0.0.5",
-    "react-autosuggest": "^6.0.4"
+    "react-autosuggest": "^6.0.4",
+    "through2": "^2.0.3"
   }
 }
