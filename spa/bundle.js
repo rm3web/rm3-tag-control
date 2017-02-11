@@ -115,6 +115,8 @@ ReactDOM.render(
     </div>
     <h2>Tag Input</h2>
     <TagInputExample />
+    <h2>Properties</h2>
+    <TagControl.Properties properties={[{}]} />
   </div>
   ,
   document.getElementById('tagcontrol')
