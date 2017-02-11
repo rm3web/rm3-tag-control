@@ -8,6 +8,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Fixed
 - Default value wasn't being set right
 - Tag type values were wrong.
+- Properties control didn't have a key.
 
 ## [0.0.8] - 2017-2-10
 ### Added
