@@ -5,6 +5,7 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ## [Unreleased]
 ### Added
 - More tag types: URL, Ontological tag, Regular tag.
+- Properties table.
 
 ## [0.0.7] - 2017-2-10
 ### Added
