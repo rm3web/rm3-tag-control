@@ -1,5 +1,7 @@
 # rm3 Tag Control
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/rm3web/rm3-tag-control.svg)](https://greenkeeper.io/)
+
 [![Build Status](https://travis-ci.org/rm3web/rm3-tag-control.svg?branch=master)](https://travis-ci.org/rm3web/rm3-tag-control)[![Dependency Status](https://david-dm.org/rm3web/rm3-tag-control.svg)](https://david-dm.org/rm3web/rm3-tag-control) [![npm version](https://badge.fury.io/js/rm3-tag-control.svg)](https://badge.fury.io/js/rm3-tag-control)
 
 ![Screenshot of controls](controls.png)
