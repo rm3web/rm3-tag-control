@@ -63,9 +63,8 @@
     "react-addons-test-utils": "~15.5.1",
     "react-dom": "~15.5.4",
     "react-proxy": "^2.0.1",
-    "react-super-select": "~0.5.4",
-    "teaspoon": "6.5.0",
-    "through2": "^2.0.0"
+    "react-super-select": "~1.0.0",
+    "teaspoon": "6.5.0"
   },
   "peerDependencies": {
     "react": "~0.14.7 || 15",
