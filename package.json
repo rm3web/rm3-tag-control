@@ -67,7 +67,7 @@
     "teaspoon": "6.5.0"
   },
   "peerDependencies": {
-    "react": "~0.14.7 || 15",
+    "react": "~15.6.1",
     "react-super-select": "~1.0.0",
     "lodash": "^4",
     "classnames": "~2.2.3"
