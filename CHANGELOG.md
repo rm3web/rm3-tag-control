@@ -4,6 +4,10 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.0.14] - 2017-05-27
+### Changed
+- Updated some of the dependencies, most notably linked-data-box
+
 ## [0.0.13] - 2017-05-27
 ### Changed
 - Updated some of the dependencies, most notably React 15.5.
@@ -74,8 +78,9 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 ### Added
 - New project
 
-[Unreleased]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.13...HEAD
-[0.0.12]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.12...v0.0.13
+[Unreleased]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.14...HEAD
+[0.0.14]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.13...v0.0.14
+[0.0.13]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.12...v0.0.13
 [0.0.12]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.11...v0.0.12
 [0.0.11]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.10...v0.0.11
 [0.0.10]: https://github.com/rm3web/rm3-tag-control/compare/v0.0.9...v0.0.10
