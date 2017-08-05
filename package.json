@@ -51,7 +51,7 @@
     "babel-register": "^6.3.13",
     "babelify": "^7.2.0",
     "budo": "^10.0.3",
-    "chai": "3.5.0",
+    "chai": "4.1.1",
     "classnames": "~2.2.3",
     "eslint": "3.19.0",
     "eslint-plugin-react": "~7.0.0",
