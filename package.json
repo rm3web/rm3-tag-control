@@ -60,7 +60,7 @@
     "lodash": "~4.17.2",
     "mocha": "3.5.1",
     "react": "~15.5.4",
-    "react-addons-test-utils": "~15.5.1",
+    "react-addons-test-utils": "~15.6.2",
     "react-dom": "~15.5.4",
     "react-proxy": "^2.0.1",
     "react-super-select": "~1.0.0",
