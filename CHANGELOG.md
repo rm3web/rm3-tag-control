@@ -4,6 +4,12 @@ This project adheres to [Semantic Versioning](http://semver.org/).
 
 ## [Unreleased]
 
+## [0.0.15] - 2018-05-03
+### Changed
+- Updated some of the dependencies
+- Added support for node 6 and 8.
+
+
 ## [0.0.14] - 2017-05-27
 ### Changed
 - Updated some of the dependencies, most notably linked-data-box
