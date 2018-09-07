@@ -49,7 +49,7 @@
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-1": "^6.3.13",
     "babel-register": "^6.3.13",
-    "babelify": "^8.0.0",
+    "babelify": "^10.0.0",
     "budo": "^11.2.0",
     "chai": "4.1.0",
     "classnames": "~2.2.3",
