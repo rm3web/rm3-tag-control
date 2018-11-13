@@ -61,7 +61,7 @@
     "mocha": "4.1.0",
     "react": "~16.6.2",
     "react-addons-test-utils": "~15.5.1",
-    "react-dom": "~15.5.4",
+    "react-dom": "~16.6.2",
     "react-proxy": "^2.0.1",
     "react-super-select": "~1.0.0",
     "teaspoon": "6.5.0"
