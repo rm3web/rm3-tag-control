@@ -75,7 +75,7 @@
   "dependencies": {
     "linked-data-box": "0.0.6",
     "prop-types": "^15.5.10",
-    "react-autosuggest": "9.0.1",
+    "react-autosuggest": "10.0.1",
     "through2": "^2.0.3"
   }
 }
